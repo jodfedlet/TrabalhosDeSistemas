@@ -56,7 +56,7 @@ int main(){
 	
 	int area = calculaArea(a, b, c);
 	
-	if(area < 0)
+	if(area <= 0)
 		area = -area;
 	printf(" Area e' : %d\n", area);
 	
@@ -70,15 +70,15 @@ int main(){
 		q.y = j;
 
 		AB = calculaArea(a, b, q);
-		if(AB < 0)
+		if(AB <= 0)
 			AB = -AB;
 	
 		AC = calculaArea(a, c, q);
-		if(AC < 0)
+		if(AC <= 0)
 			AC = -AC;
 		
 		BC = calculaArea(b, c, q);
-		if(BC < 0)
+		if(BC <= 0)
 			BC = -BC;
 
 
